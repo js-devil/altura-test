@@ -1,0 +1,8 @@
+.flip {
+  backface-visibility: visible !important;
+  animation: flip 5s ease-out infinite;
+
+  img {
+    height: 50px;
+  }
+}

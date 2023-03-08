@@ -1,0 +1,96 @@
+// Color Variables
+$bg-color: #f4f6f8;
+// $color-
+
+// Button color
+// $btn-color: #ff9b00;
+$btn-color: #fee9df;
+
+// Text Colors
+$text-color: #333333;
+$text-color-muted: #828282;
+
+// Font Weights
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;
+
+// font sizes
+$font-xsm: 10px;
+$font-sm: 12px;
+$font-base: 14px;
+$font-lg: 16px;
+$font-xlg: 18px;
+$font-xxlg: 20px;
+$font-xxxlg: 24px;
+$font-xxxxlg: 32px;
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../../fonts/rubik/Rubik-Light.ttf') format('truetype');
+  font-weight: $font-light;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../../fonts/rubik/Rubik-LightItalic.ttf') format('truetype');
+  font-weight: $font-light;
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../../fonts/rubik/Rubik-Regular.ttf') format('truetype');
+  font-weight: $font-normal;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../../fonts/rubik/Rubik-Italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: $font-normal;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../../fonts/rubik/Rubik-Medium.ttf') format('truetype');
+  font-weight: $font-medium;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../../fonts/rubik/Rubik-MediumItalic.ttf') format('truetype');
+  font-weight: $font-medium;
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../../fonts/rubik/Rubik-SemiBold.ttf') format('truetype');
+  font-weight: $font-semi-bold;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../../fonts/rubik/Rubik-SemiBoldItalic.ttf') format('truetype');
+  font-weight: $font-semi-bold;
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+}

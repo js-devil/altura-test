@@ -1,0 +1,43 @@
+.app {
+  .appContainer {
+    padding: 24px 64px 0;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    &--title {
+      h1,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-size: 500;
+      }
+
+      p {
+        font-size: 16px;
+        color: $text-color-muted;
+      }
+    }
+  }
+
+  &__body {
+    margin-top: 48px;
+
+    &--list {
+      display: grid;
+      grid-template-columns: [col1] 24% [col2] 24% [col3] 24% [col4] 24%;
+      grid-gap: 25px;
+    }
+
+    &--loading {
+      display: flex;
+      justify-content: center;
+      padding: 40px 0 60px;
+    }
+  }
+}

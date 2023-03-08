@@ -1,0 +1,100 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  min-width: 220px;
+  max-height: 320px;
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+
+  & * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      position: relative;
+      opacity: 0.9;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 45%;
+    left: 7%;
+    right: 7%;
+    bottom: 45%;
+    border: 1px solid white;
+    border-width: 1px 1px 0;
+
+    &--title {
+      overflow: hidden;
+      -webkit-transform: translateY(50%);
+      transform: translateY(50%);
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+
+      h2 {
+        display: table;
+        margin: 0 auto;
+        padding: 0 10px;
+        position: relative;
+        text-align: center;
+        width: auto;
+        text-transform: uppercase;
+        font-weight: 500;
+
+        &:before {
+          left: -1000%;
+        }
+
+        &:after {
+          right: -1000%;
+        }
+      }
+    }
+
+    p {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      position: absolute;
+      width: 100%;
+      padding: 0 20px;
+      margin: 0;
+      opacity: 0;
+      line-height: 1.6em;
+      font-size: 0.9em;
+    }
+  }
+
+  //   Hover effect
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover &__image img {
+    opacity: 0.25;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  &:hover &__content {
+    top: 7%;
+    bottom: 7%;
+
+    p {
+      opacity: 1;
+      -webkit-transition-delay: 0.35s;
+      transition-delay: 0.35s;
+    }
+  }
+}
