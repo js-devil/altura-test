@@ -1,6 +1,10 @@
 .app {
   .appContainer {
     padding: 24px 64px 0;
+
+    @media screen and (max-width: 610px) {
+      padding: 24px 36px 0;
+    }
   }
 
   &__header {
@@ -15,12 +19,12 @@
 
       h1 {
         font-size: 24px;
-        font-size: 500;
+        font-size: $font-medium;
       }
 
       p {
-        font-size: 16px;
-        color: $text-color-muted;
+        font-size: $font-lg;
+        color: $text-grey;
       }
     }
   }
@@ -38,6 +42,12 @@
       display: flex;
       justify-content: center;
       padding: 40px 0 60px;
+    }
+
+    @media screen and (max-width: 610px) {
+      &--list {
+        grid-template-columns: auto;
+      }
     }
   }
 }

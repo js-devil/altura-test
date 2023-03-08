@@ -5,12 +5,14 @@
   max-height: 320px;
   width: 100%;
   background: #000000;
-  color: #ffffff;
+  border-radius: 10px;
+  color: $bg-white;
   text-align: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  font-size: 16px;
+  font-size: $font-lg;
 
-  & * {
+  &__image img,
+  &__content {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transition: all 0.45s ease-in-out;
@@ -27,12 +29,8 @@
 
   &__content {
     position: absolute;
-    top: 45%;
-    left: 7%;
-    right: 7%;
-    bottom: 45%;
-    border: 1px solid white;
-    border-width: 1px 1px 0;
+    width: 100%;
+    bottom: 10%;
 
     &--title {
       overflow: hidden;
@@ -42,22 +40,20 @@
       bottom: 0;
       width: 100%;
 
-      h2 {
+      & > div {
         display: table;
         margin: 0 auto;
-        padding: 0 10px;
+        padding: 10px 0;
         position: relative;
         text-align: center;
-        width: auto;
-        text-transform: uppercase;
-        font-weight: 500;
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 
-        &:before {
-          left: -1000%;
-        }
-
-        &:after {
-          right: -1000%;
+        h3 {
+          text-transform: uppercase;
+          font-weight: $font-medium;
+          font-size: $font-xlg;
+          margin: 0;
         }
       }
     }
@@ -68,7 +64,6 @@
       transform: translateY(-50%);
       position: absolute;
       width: 100%;
-      padding: 0 20px;
       margin: 0;
       opacity: 0;
       line-height: 1.6em;
@@ -77,6 +72,7 @@
   }
 
   //   Hover effect
+  &:active,
   &:hover {
     cursor: pointer;
   }
@@ -90,11 +86,24 @@
   &:hover &__content {
     top: 7%;
     bottom: 7%;
+    left: 7%;
+    right: 7%;
+    width: auto;
+    border: 1px solid $bg-white;
+    border-width: 1px 1px 0;
 
     p {
       opacity: 1;
       -webkit-transition-delay: 0.35s;
       transition-delay: 0.35s;
+    }
+
+    &--title {
+      bottom: 10px;
+
+      & > div {
+        background: none;
+      }
     }
   }
 }

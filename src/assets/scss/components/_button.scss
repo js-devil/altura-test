@@ -2,7 +2,7 @@
   border: 1px solid transparent;
   border-radius: 4px;
   box-shadow: none;
-  color: $text-color;
+  color: $text-dark;
   display: inline-block;
   font-family: inherit;
   font-size: $font-base;
@@ -36,11 +36,22 @@
   }
 
   &--primary {
-    color: $text-color;
-    background-color: $btn-color;
+    color: $text-dark;
+    background-color: $bg-yellow;
+
     &:hover,
     &:active {
-      background-color: darken($btn-color, 10%);
+      background-color: lighten($bg-yellow, 10%);
+    }
+  }
+
+  &--secondary {
+    color: $text-dark;
+    background-color: $bg-yellow-shade;
+
+    &:hover,
+    &:active {
+      background-color: darken($bg-yellow-shade, 10%);
     }
   }
 }

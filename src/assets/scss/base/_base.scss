@@ -2,7 +2,18 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: $bg-color;
+  background-color: $bg-white-alt;
   font-family: 'Rubik', sans-serif;
   font-size: $font-lg;
+}
+
+body.modalOpen {
+  overflow-y: hidden;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 230px;
 }
