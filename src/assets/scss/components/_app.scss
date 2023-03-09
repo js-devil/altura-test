@@ -2,7 +2,7 @@
   .appContainer {
     padding: 24px 64px 0;
 
-    @media screen and (max-width: 610px) {
+    @media screen and (max-width: 1024px) {
       padding: 24px 36px 0;
     }
   }
@@ -34,7 +34,7 @@
 
     &--list {
       display: grid;
-      grid-template-columns: [col1] 24% [col2] 24% [col3] 24% [col4] 24%;
+      grid-template-columns: repeat(4, 1fr);
       grid-gap: 25px;
     }
 
@@ -44,9 +44,21 @@
       padding: 40px 0 60px;
     }
 
-    @media screen and (max-width: 610px) {
+    @media screen and (max-width: 480px) {
       &--list {
         grid-template-columns: auto;
+      }
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 980px) {
+      &--list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media screen and (min-width: 981px) and (max-width: 1024px) {
+      &--list {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
   }

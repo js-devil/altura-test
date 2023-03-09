@@ -89,12 +89,14 @@ const Modal = ({ nft, onClose }) => {
                   Buy
                 </a>
               </div>
+
+              <div>
+                <small>
+                  Last Updated: {formatDate(nftData.timeLastUpdated)}
+                </small>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className="modal__footer">
-          <p>Last Updated: {formatDate(nftData.timeLastUpdated)}</p>
         </div>
       </div>
     </div>
