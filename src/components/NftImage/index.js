@@ -1,11 +1,11 @@
 import React from 'react';
 
-import maneki from '../../assets/images/maneki2.png';
+import nftVector from '../../assets/images/nft.jpeg';
 import './styles.scss';
 
 const NftImage = () => (
   <div className="flip">
-    <img src={maneki} alt="maneki" />
+    <img src={nftVector} alt="maneki" />
   </div>
 );
 
